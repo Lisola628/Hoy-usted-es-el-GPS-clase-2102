@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SPAN 2102 · Guía del campus · 28 de agosto</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Barlow:wght@700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --tinta:#000;--placa:#0E3268;--ambar:#6E4209;--linea:#E5A400;--gris:#3D4756;
+  --display:"Barlow",Arial,sans-serif;--body:"Atkinson Hyperlegible",Verdana,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--body);color:var(--tinta);background:#E7ECF3;padding:22px;
+  line-height:1.62;font-size:17px}
+.hoja{max-width:8.5in;margin:0 auto 22px;background:#fff;padding:.5in}
+.encabezado{border-bottom:4px solid #000;padding-bottom:10px;margin-bottom:16px}
+.encabezado h1{font-family:var(--display);font-size:29px;line-height:1.1}
+.encabezado p{font-family:var(--display);font-size:15px;color:var(--placa);margin-top:3px}
+h2{font-family:var(--display);font-size:22px;color:var(--placa);margin:24px 0 3px}
+.gloss{color:var(--gris);font-style:italic;font-size:14px;margin-bottom:11px}
+.mapa{display:flex;gap:18px;align-items:center;flex-wrap:wrap;border:3px solid #000;
+  padding:14px 16px;margin:14px 0 4px}
+.mapa .qr{width:104px;flex-shrink:0}
+.mapa .qr svg{display:block;width:100%;height:auto}
+.mapa > div:last-child{flex:1;min-width:230px}
+.url{font-family:var(--display);font-size:19px;color:var(--placa);word-break:break-all}
+.identificacion{display:flex;gap:24px;flex-wrap:wrap;margin-bottom:14px;font-size:16px}
+.identificacion p{display:flex;align-items:baseline;gap:8px;flex:1;min-width:210px}
+.raya{flex:1;border-bottom:2px solid #000;height:17px}
+ul.limpia{list-style:none;padding:0}
+ul.limpia li{padding:5px 0;border-bottom:1px solid #B4BEcc;font-size:16px}
+ul.limpia b{color:var(--placa)}
+.dos{columns:2;column-gap:30px}
+ol.lineas{list-style:none;counter-reset:l;padding:0}
+ol.lineas li{counter-increment:l;position:relative;padding:0 0 5px 32px;margin-bottom:15px;
+  border-bottom:2px solid #B4BEcc;min-height:32px;font-size:16px}
+ol.lineas li::before{content:counter(l);position:absolute;left:0;top:0;width:22px;height:22px;
+  display:grid;place-items:center;background:var(--placa);color:#fff;
+  font-family:var(--display);font-size:13px}
+.renglon{display:block;height:30px;border-bottom:2px solid #B4BEcc;margin-bottom:13px}
+.tarjetas{display:grid;grid-template-columns:1fr 1fr;gap:0}
+.tarjeta{border:2px dashed #6A7488;padding:16px 18px;min-height:2.05in;
+  display:flex;flex-direction:column;justify-content:center}
+.tarjeta .rotulo{font-family:var(--display);text-transform:uppercase;letter-spacing:.14em;
+  font-size:12px;color:var(--ambar);margin-bottom:5px}
+.tarjeta .destino{font-family:var(--display);font-size:27px;line-height:1.08}
+.tarjeta .prohibido{margin-top:10px;padding-top:8px;border-top:3px solid var(--linea);font-size:15px}
+.tarjeta .prohibido b{font-family:var(--display);font-size:12px;text-transform:uppercase;
+  letter-spacing:.1em;display:block;color:#000}
+.aviso{background:#FFF6DE;border-left:6px solid var(--linea);padding:13px 17px;
+  font-size:15px;margin-bottom:20px;max-width:8.5in;margin-left:auto;margin-right:auto}
+@media print{
+  body{background:#fff;padding:0;font-size:12pt}
+  .hoja{max-width:none;margin:0;padding:.45in;page-break-after:always}
+  .hoja:last-child{page-break-after:auto}
+  .aviso{display:none}
+}
+</style>
+</head>
+<body>
+
+<div class="aviso">
+  <b>Para imprimir:</b> Ctrl/Cmd + P. Páginas 1 y 2 son la guía del estudiante, una por persona. Páginas 3 y 4 son las tarjetas de destino: imprímalas y córtelas por la línea de puntos. Para letra grande, suba la escala de impresión a 150% e imprima las páginas 1 y 2 en tamaño legal. Este aviso no se imprime.
+</div>
+
+<section class="hoja">
+  <div class="encabezado">
+    <h1>Hoy usted es el GPS</h1>
+    <p>SPAN 2102 · 28 de agosto · Direcciones en el campus</p>
+  </div>
+  <div class="identificacion">
+    <p>Nombre <span class="raya"></span></p>
+    <p>Nuestro salón <span class="raya"></span></p>
+  </div>
+
+  <div class="mapa">
+    <div class="qr"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33" shape-rendering="crispEdges" role="img" aria-label="Codigo QR: mapa interactivo del campus de LSU"><rect width="33" height="33" fill="#fff"/><path d="M2 2h7v1h-7zM14 2h1v1h-1zM16 2h1v1h-1zM20 2h2v1h-2zM24 2h7v1h-7zM2 3h1v1h-1zM8 3h1v1h-1zM11 3h3v1h-3zM18 3h1v1h-1zM24 3h1v1h-1zM30 3h1v1h-1zM2 4h1v1h-1zM4 4h3v1h-3zM8 4h1v1h-1zM13 4h1v1h-1zM16 4h2v1h-2zM19 4h1v1h-1zM21 4h2v1h-2zM24 4h1v1h-1zM26 4h3v1h-3zM30 4h1v1h-1zM2 5h1v1h-1zM4 5h3v1h-3zM8 5h1v1h-1zM11 5h3v1h-3zM15 5h1v1h-1zM18 5h1v1h-1zM20 5h1v1h-1zM24 5h1v1h-1zM26 5h3v1h-3zM30 5h1v1h-1zM2 6h1v1h-1zM4 6h3v1h-3zM8 6h1v1h-1zM11 6h1v1h-1zM14 6h1v1h-1zM19 6h2v1h-2zM22 6h1v1h-1zM24 6h1v1h-1zM26 6h3v1h-3zM30 6h1v1h-1zM2 7h1v1h-1zM8 7h1v1h-1zM10 7h1v1h-1zM13 7h1v1h-1zM17 7h6v1h-6zM24 7h1v1h-1zM30 7h1v1h-1zM2 8h7v1h-7zM10 8h1v1h-1zM12 8h1v1h-1zM14 8h1v1h-1zM16 8h1v1h-1zM18 8h1v1h-1zM20 8h1v1h-1zM22 8h1v1h-1zM24 8h7v1h-7zM12 9h1v1h-1zM15 9h1v1h-1zM17 9h4v1h-4zM22 9h1v1h-1zM2 10h1v1h-1zM5 10h1v1h-1zM7 10h2v1h-2zM10 10h2v1h-2zM13 10h2v1h-2zM16 10h1v1h-1zM18 10h1v1h-1zM23 10h1v1h-1zM25 10h1v1h-1zM5 11h3v1h-3zM10 11h1v1h-1zM13 11h3v1h-3zM17 11h2v1h-2zM22 11h3v1h-3zM27 11h1v1h-1zM30 11h1v1h-1zM2 12h1v1h-1zM5 12h4v1h-4zM10 12h2v1h-2zM15 12h3v1h-3zM21 12h1v1h-1zM27 12h3v1h-3zM2 13h1v1h-1zM4 13h3v1h-3zM9 13h1v1h-1zM13 13h3v1h-3zM18 13h1v1h-1zM20 13h1v1h-1zM22 13h1v1h-1zM24 13h3v1h-3zM28 13h2v1h-2zM6 14h1v1h-1zM8 14h1v1h-1zM11 14h1v1h-1zM13 14h2v1h-2zM16 14h5v1h-5zM23 14h2v1h-2zM27 14h1v1h-1zM29 14h2v1h-2zM2 15h2v1h-2zM5 15h3v1h-3zM13 15h6v1h-6zM21 15h1v1h-1zM23 15h1v1h-1zM25 15h1v1h-1zM3 16h4v1h-4zM8 16h1v1h-1zM10 16h1v1h-1zM12 16h1v1h-1zM14 16h3v1h-3zM23 16h1v1h-1zM25 16h6v1h-6zM2 17h1v1h-1zM4 17h1v1h-1zM6 17h2v1h-2zM12 17h1v1h-1zM14 17h1v1h-1zM19 17h4v1h-4zM24 17h2v1h-2zM27 17h1v1h-1zM29 17h1v1h-1zM3 18h1v1h-1zM5 18h2v1h-2zM8 18h1v1h-1zM10 18h1v1h-1zM13 18h3v1h-3zM18 18h4v1h-4zM23 18h1v1h-1zM25 18h1v1h-1zM29 18h1v1h-1zM3 19h1v1h-1zM7 19h1v1h-1zM9 19h2v1h-2zM15 19h2v1h-2zM19 19h2v1h-2zM23 19h3v1h-3zM27 19h1v1h-1zM30 19h1v1h-1zM2 20h1v1h-1zM4 20h1v1h-1zM8 20h1v1h-1zM11 20h1v1h-1zM13 20h2v1h-2zM16 20h1v1h-1zM18 20h2v1h-2zM22 20h2v1h-2zM25 20h2v1h-2zM29 20h2v1h-2zM5 21h1v1h-1zM11 21h3v1h-3zM16 21h2v1h-2zM19 21h2v1h-2zM23 21h1v1h-1zM25 21h1v1h-1zM29 21h2v1h-2zM2 22h1v1h-1zM4 22h7v1h-7zM13 22h2v1h-2zM22 22h5v1h-5zM28 22h1v1h-1zM10 23h2v1h-2zM13 23h2v1h-2zM16 23h1v1h-1zM22 23h1v1h-1zM26 23h1v1h-1zM28 23h3v1h-3zM2 24h7v1h-7zM11 24h1v1h-1zM18 24h1v1h-1zM20 24h1v1h-1zM22 24h1v1h-1zM24 24h1v1h-1zM26 24h1v1h-1zM29 24h1v1h-1zM2 25h1v1h-1zM8 25h1v1h-1zM10 25h1v1h-1zM16 25h1v1h-1zM18 25h1v1h-1zM20 25h1v1h-1zM22 25h1v1h-1zM26 25h3v1h-3zM2 26h1v1h-1zM4 26h3v1h-3zM8 26h1v1h-1zM11 26h1v1h-1zM19 26h1v1h-1zM22 26h5v1h-5zM30 26h1v1h-1zM2 27h1v1h-1zM4 27h3v1h-3zM8 27h1v1h-1zM10 27h4v1h-4zM18 27h2v1h-2zM21 27h1v1h-1zM24 27h6v1h-6zM2 28h1v1h-1zM4 28h3v1h-3zM8 28h1v1h-1zM11 28h3v1h-3zM19 28h1v1h-1zM21 28h1v1h-1zM26 28h3v1h-3zM30 28h1v1h-1zM2 29h1v1h-1zM8 29h1v1h-1zM17 29h3v1h-3zM21 29h3v1h-3zM29 29h1v1h-1zM2 30h7v1h-7zM10 30h5v1h-5zM17 30h4v1h-4zM22 30h4v1h-4zM27 30h1v1h-1zM29 30h1v1h-1z" fill="#000"/></svg></div>
+    <div>
+      <p><b>El mapa interactivo del campus.</b> Escanee el código o escriba la dirección en el teléfono.</p>
+      <p class="url">map.concept3d.com/?id=743</p>
+      <p class="gloss" style="margin:4px 0 0">Úselo para mirar el campus, no para pedir la ruta: hoy el GPS es usted.</p>
+    </div>
+  </div>
+
+  <h2>Guía del campus</h2>
+  <p class="gloss">Las mismas doce ubicaciones, en palabras. Use el mapa, esta guía, o las dos.</p>
+  <ul class="limpia">
+    <li><b>El Quad</b> es el centro histórico del campus, con edificios de techo rojo alrededor.</li>
+    <li><b>Memorial Tower</b> queda en el extremo norte del Quad, cerca de Highland Road.</li>
+    <li><b>El Parade Ground</b> es el gran espacio abierto al este del Quad.</li>
+    <li><b>Middleton Library</b> queda al sur del Quad, a unos pasos de las clases.</li>
+    <li><b>Hill Memorial Library</b> queda al norte, cerca de Memorial Tower.</li>
+    <li><b>Coates Hall</b> queda sobre el Quad, entre los edificios de clase.</li>
+    <li><b>Allen Hall</b> también queda sobre el Quad, con murales adentro.</li>
+    <li><b>El Student Union</b> queda al este, pasando el Parade Ground.</li>
+    <li><b>Tiger Stadium</b> queda al oeste del centro del campus.</li>
+    <li><b>El Greek Theatre</b> queda al norte, detrás de los árboles.</li>
+    <li><b>El UREC</b> queda al sur del campus.</li>
+    <li><b>Woodin Hall</b> queda al sur, en la zona de agricultura.</li>
+  </ul>
+
+  <h2>Para dar direcciones</h2>
+  <p class="gloss">Las palabras que va a necesitar.</p>
+  <ul class="limpia dos">
+    <li><b>doblar</b> — <i>to turn</i></li>
+    <li><b>seguir (sigo)</b> — <i>to keep on going</i></li>
+    <li><b>a la derecha</b> — <i>to the right</i></li>
+    <li><b>a la izquierda</b> — <i>to the left</i></li>
+    <li><b>(todo) derecho, recto</b> — <i>straight ahead</i></li>
+    <li><b>por</b> — <i>along, through</i></li>
+    <li><b>hasta</b> — <i>as far as, until you reach</i></li>
+    <li><b>cruzar</b> — <i>to cross</i></li>
+    <li><b>quedar</b> — <i>to be located</i></li>
+    <li><b>enfrente de</b> — <i>across from, facing</i></li>
+    <li><b>al lado de</b> — <i>next to</i></li>
+    <li><b>entre … y …</b> — <i>between … and …</i></li>
+    <li><b>detrás de</b> — <i>behind</i></li>
+    <li><b>a unos pasos de</b> — <i>a few steps from</i></li>
+    <li><b>¿Cómo se llega a…?</b> — <i>How do you get to…?</i></li>
+  </ul>
+</section>
+
+<section class="hoja">
+  <div class="encabezado">
+    <h1>Su trabajo de hoy</h1>
+    <p>Escriba aquí o en su cuaderno, como prefiera.</p>
+  </div>
+
+  <h2>1 · La entrevista</h2>
+  <p class="gloss">En su grupo, pregunte con tú. Escriba quién dice que sí y un detalle más.</p>
+  <ol class="lineas">
+    <li>¿Tienes la licencia de manejar?</li>
+    <li>¿Manejas un coche híbrido, eléctrico o todoterreno?</li>
+    <li>¿Sabes revisar el aceite de un coche?</li>
+    <li>¿Has tenido una llanta desinflada?</li>
+    <li>¿Estacionas en el campus casi todos los días?</li>
+    <li>¿Prefieres caminar, ir en bicicleta o usar el autobús?</li>
+  </ol>
+
+  <h2>2 · Adivine el destino — Ronda 1, con tú</h2>
+  <p class="gloss">Cuatro mandatos desde nuestro salón. No escriba el nombre del destino.</p>
+  <span class="renglon"></span><span class="renglon"></span>
+  <span class="renglon"></span><span class="renglon"></span>
+
+  <h2>3 · Adivine el destino — Ronda 2, con usted</h2>
+  <p class="gloss">Tarjeta nueva. Ahora escribe para una visita que no conoce el campus.</p>
+  <span class="renglon"></span><span class="renglon"></span>
+  <span class="renglon"></span><span class="renglon"></span>
+
+  <h2>4 · Boleto de salida</h2>
+  <ol class="lineas">
+    <li>Una instrucción para ir de nuestro salón al Quad, con tú.</li>
+    <li>La misma instrucción, con usted.</li>
+    <li>Una palabra de hoy que quiere recordar.</li>
+  </ol>
+</section>
+
+<section class="hoja">
+  <div class="encabezado">
+    <h1>Tarjetas de destino · 1</h1>
+    <p>Corte por la línea · Léala en voz alta a su equipo</p>
+  </div>
+  <div class="tarjetas">
+    <div class="tarjeta">
+      <p class="rotulo">Destino secreto</p>
+      <p class="destino">Memorial Tower</p>
+      <p class="prohibido"><b>Palabras prohibidas</b>torre, campanario, reloj</p>
+    </div>
+    <div class="tarjeta">
+      <p class="rotulo">Destino secreto</p>
+      <p class="destino">Middleton Library</p>
+      <p class="prohibido"><b>Palabras prohibidas</b>biblioteca, libros, estudiar</p>
+    </div>
+    <div class="tarjeta">
+      <p class="rotulo">Destino secreto</p>
+      <p class="destino">El Parade Ground</p>
+      <p class="prohibido"><b>Palabras prohibidas</b>césped, campo, abierto</p>
+    </div>
+    <div class="tarjeta">
+      <p class="rotulo">Destino secreto</p>
+      <p class="destino">El Quad</p>
+      <p class="prohibido"><b>Palabras prohibidas</b>centro, patio, robles</p>
+    </div>
+    <div class="tarjeta">
+      <p class="rotulo">Destino secreto</p>
+      <p class="destino">Hill Memorial Library</p>
+      <p class="prohibido"><b>Palabras prohibidas</b>biblioteca, archivo, columnas</p>
+    </div>
+    <div class="tarjeta">
+      <p class="rotulo">Destino secreto</p>
+      <p class="destino">Allen Hall</p>
+      <p class="prohibido"><b>Palabras prohibidas</b>murales, inglés, pintura</p>
+    </div>
+  </div>
+</section>
+
+<section class="hoja">
+  <div class="encabezado">
+    <h1>Tarjetas de destino · 2</h1>
+    <p>Corte por la línea · Léala en voz alta a su equipo</p>
+  </div>
+  <div class="tarjetas">
+    <div class="tarjeta">
+      <p class="rotulo">Destino secreto</p>
+      <p class="destino">El Student Union</p>
+      <p class="prohibido"><b>Palabras prohibidas</b>unión, comida, tienda</p>
+    </div>
+    <div class="tarjeta">
+      <p class="rotulo">Destino secreto</p>
+      <p class="destino">Tiger Stadium</p>
+      <p class="prohibido"><b>Palabras prohibidas</b>estadio, fútbol, sábado</p>
+    </div>
+    <div class="tarjeta">
+      <p class="rotulo">Destino secreto</p>
+      <p class="destino">Coates Hall</p>
+      <p class="prohibido"><b>Palabras prohibidas</b>clase, salón, español</p>
+    </div>
+    <div class="tarjeta">
+      <p class="rotulo">Destino secreto</p>
+      <p class="destino">Woodin Hall</p>
+      <p class="prohibido"><b>Palabras prohibidas</b>agricultura, animales, granja</p>
+    </div>
+    <div class="tarjeta">
+      <p class="rotulo">Destino secreto</p>
+      <p class="destino">El Greek Theatre</p>
+      <p class="prohibido"><b>Palabras prohibidas</b>teatro, anfiteatro, escalones</p>
+    </div>
+    <div class="tarjeta">
+      <p class="rotulo">Destino secreto</p>
+      <p class="destino">El UREC</p>
+      <p class="prohibido"><b>Palabras prohibidas</b>gimnasio, ejercicio, piscina</p>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
